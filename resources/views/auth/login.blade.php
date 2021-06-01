@@ -31,7 +31,7 @@
         <!-- Main content -->
         <div class="content-wrapper">
             <!-- About Area -->
-            <h1>Gestion decole</h1>
+            <h1>Gestion d'école</h1>
             <div id="carousel-2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
@@ -43,12 +43,12 @@
                     <div class="carousel-item active">
                         <a href="https://bootstrapcreative.com/">
 
-                            <img src="https://dummyimage.com/1000x400/444/" alt="responsive image" class="d-block img-fluid">
+                            <img src="{{ asset('global_assets/images/slider1.png') }}" alt="responsive image" class="d-block img-fluid">
 
                             <div class="carousel-caption">
                                 <div>
-                                    <h2>Digital Craftsmanship</h2>
-                                    <p>We meticously build each site to get results</p>
+                                    <h2>meilleur Staff</h2>
+                                    <p>meilleur equipe</p>
                                     <span class="btn btn-sm btn-outline-secondary">Learn More</span>
                                 </div>
                             </div>
@@ -59,13 +59,13 @@
 
                     <div class="carousel-item">
                         <a href="https://bootstrapcreative.com/">
-                            <img src="https://dummyimage.com/1000x400/444/" alt="responsive image" class="d-block img-fluid">
+                            <img src="{{ asset('global_assets/images/slider2.png') }}" alt="responsive image" class="d-block img-fluid">
 
                             <div class="carousel-caption justify-content-center align-items-center">
                                 <div>
-                                    <h2>Every project begins with a sketch</h2>
-                                    <p>We work as an extension of your business to explore solutions</p>
-                                    <span class="btn btn-sm btn-outline-secondary">Our Process</span>
+                                    <h2>meilleur Equipe</h2>
+                                    <p>Meilleur Equipe</p>
+                                    <span class="btn btn-sm btn-outline-secondary">Meilleur Equipe</span>
                                 </div>
                             </div>
                         </a>
@@ -74,7 +74,7 @@
                     <div class="carousel-item">
                         <a href="https://bootstrapcreative.com/">
 
-                            <img src="https://dummyimage.com/1000x400/444/" alt="responsive image" class="d-block img-fluid">
+                            <img src="{{ asset('global_assets/images/slider3.png') }}" alt="responsive image" class="d-block img-fluid">
 
 
                             <div class="carousel-caption justify-content-center align-items-center">
@@ -242,7 +242,7 @@
                 <div class="row">
                     <div class="heading-title text-center">
                         <h3 class="text-uppercase">Notre Equipe</h3>
-                        <p class="p-top-30 half-txt">Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. </p>
+                        <p class="p-top-30 half-txt">une équipe de développeurs talentueux </p>
                     </div>
 
                     <div class="col-md-4 col-sm-4">
@@ -263,7 +263,7 @@
                             </div>
                         </div>
                         <div class="team-title">
-                            <h5>Martin Smith</h5>
+                            <h5>Rihab Rihab</h5>
                             <span>founder &amp; ceo</span>
                         </div>
                     </div>
@@ -285,7 +285,7 @@
                             </div>
                         </div>
                         <div class="team-title">
-                            <h5>Franklin Harbet</h5>
+                            <h5>Rihab Rihabi</h5>
                             <span>HR Manager</span>
                         </div>
                     </div>
@@ -307,7 +307,7 @@
                             </div>
                         </div>
                         <div class="team-title">
-                            <h5>Linda Anderson</h5>
+                            <h5>Rihab Rohab</h5>
                             <span>Marketing Manager</span>
                         </div>
                     </div>
@@ -327,8 +327,8 @@
                         <div class="card-body">
                             <div class="text-center mb-3">
                                 <i class="icon-people icon-2x text-warning-400 border-warning-400 border-3 rounded-round p-3 mb-3 mt-1"></i>
-                                <h5 class="mb-0">Login to your account</h5>
-                                <span class="d-block text-muted">Your credentials</span>
+                                <h5 class="mb-0">Connexion</h5>
+                                <span class="d-block text-muted">Vos paramètres de connexion</span>
                             </div>
 
                                 @if ($errors->any())
@@ -340,7 +340,7 @@
 
 
                             <div class="form-group ">
-                                <input type="text" class="form-control" name="identity" value="{{ old('identity') }}" placeholder="Login ID or Email">
+                                <input type="text" class="form-control" name="identity" value="{{ old('identity') }}" placeholder="Login ID ou Email">
                             </div>
 
                             <div class="form-group ">
@@ -352,11 +352,11 @@
                                 <div class="form-check mb-0">
                                     <label class="form-check-label">
                                         <input type="checkbox" name="remember" class="form-input-styled" {{ old('remember') ? 'checked' : '' }} data-fouc>
-                                        Remember
+                                        Rappelez moi
                                     </label>
                                 </div>
 
-                                <a href="{{ route('password.request') }}" class="ml-auto">Forgot password?</a>
+                                <a href="{{ route('password.request') }}" class="ml-auto">Mot de passe oublié?</a>
                             </div>
 
                             <div class="form-group">
@@ -467,25 +467,25 @@
 
                     <div class="container">
                         <form id="contact" action="" method="post">
-                            <h3>Quick Contact</h3>
-                            <h4>Contact us today, and get reply with in 24 hours!</h4>
+                            <h3>Contactez-nous</h3>
+                            <h4>Contactez nous à travers ce formulaire</h4>
                             <fieldset>
-                                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                                <input placeholder="Votre nom" type="text" tabindex="1" required autofocus>
                             </fieldset>
                             <fieldset>
-                                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                                <input placeholder="Votre adresse email" type="email" tabindex="2" required>
                             </fieldset>
                             <fieldset>
-                                <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                                <input placeholder="Votre numéro de téléphone" type="tel" tabindex="3" required>
                             </fieldset>
                             <fieldset>
-                                <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+                                <input placeholder="Votre SiteWeb avec http://" type="url" tabindex="4" required>
                             </fieldset>
                             <fieldset>
-                                <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                                <textarea placeholder="Votre message ici...." tabindex="5" required></textarea>
                             </fieldset>
                             <fieldset>
-                                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                                <button name="submiçà  t" type="submit" id="contact-submit" data-submit="...Sending">Envoyer</button>
                             </fieldset>
                         </form>
 
